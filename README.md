@@ -98,6 +98,39 @@ npm install
 ```
 Configure MySQL database in db.js.
 
+**SQL Setup**
+
+```bash
+  cd lib/server
+```
+
+--- 
+
+Go the server director
+
+```bash
+  node db.js
+```
+Run db.js to create the database
+
+---
+
+```bash
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';
+GRANT ALL PRIVILEGES ON shopkart.* TO 'root'@'localhost';
+FLUSH PRIVILEGES;
+```
+After running this, your Node.js backend should be able to connect to MySQL using root and password root.
+
+---
+
+```bash
+  mysql -u root -p
+```
+Run SQL and type root as the password
+
+---
+
 **Start the server:**
 ```bash
 npm start
