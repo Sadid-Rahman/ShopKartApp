@@ -1,5 +1,8 @@
 # ShopKart Application Documentation
 
+## Demo
+![Demo](shopkartApp.mp4)
+
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Technology Stack](#technology-stack)
