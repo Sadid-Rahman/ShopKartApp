@@ -1,7 +1,7 @@
 # ShopKart Application Documentation
 
 ## Demo
-![Demo](shopkartApp.mp4)
+[Watch the Shopkart App demo](https://github.com/Sadid-Rahman/ShopKartApp/blob/main/shopkartApp.mp4?raw=true)
 
 ## Table of Contents
 - [Project Overview](#project-overview)
