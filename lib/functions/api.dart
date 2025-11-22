@@ -44,7 +44,9 @@ Future<Map<String, dynamic>?> userLogin(String email, String password) async {
   try {
     final res = await http.post(
       Uri.parse('http://localhost:3000/loginSignup/login'),
-      headers: {"Content-Type": "application/json"},
+      headers: {
+        "Content-Type": "application/json"
+        },
       body: jsonEncode({'email': email, 'password': password}),
     );
 
@@ -110,6 +112,11 @@ Future<Map<String, dynamic>?> updateUserProfile(
       request.files.add(await http.MultipartFile.fromPath(
         'image',
         profileImage.path,
+      ));
+    }else{
+      request.files.add(await http.MultipartFile.fromPath(
+        'image',
+        'assets/default_avatar.png',
       ));
     }
 

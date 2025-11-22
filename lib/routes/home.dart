@@ -32,10 +32,12 @@ class _HomeState extends State<Home> {
   bool loadingProducts = true;
   List<bool> isFavorited = [];
   Map<String, dynamic>? user;
+  late bool userLoggedout;
 
 
  @override
   void didChangeDependencies() {
+    userLoggedout = false;
     super.didChangeDependencies();
 
     final args = ModalRoute.of(context)?.settings.arguments;
@@ -43,9 +45,10 @@ class _HomeState extends State<Home> {
     // If logout was triggered
     if (args != null && args is Map && args['logout'] == true) {
       SessionManager.instance.clear(); // CLEAR SESSION
-      user = null;                     // Forget local user
-      setState(() {});                 // refresh UI
-      return;
+      user = null;      
+          
+      productsInWishlist.clear();
+      //isFavorited.clear();
     }
 
     if (args != null && args is Map<String, dynamic> && args['id'] != null) {
