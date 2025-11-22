@@ -98,22 +98,17 @@ npm install
 ```
 Configure MySQL database in db.js.
 
-**SQL Setup**
+**SQL Setup:**
 
 ```bash
   cd lib/server
 ```
-
---- 
-
 Go the server director
 
 ```bash
   node db.js
 ```
 Run db.js to create the database
-
----
 
 ```bash
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';
@@ -122,20 +117,16 @@ FLUSH PRIVILEGES;
 ```
 After running this, your Node.js backend should be able to connect to MySQL using root and password root.
 
----
-
 ```bash
   mysql -u root -p
 ```
 Run SQL and type root as the password
 
----
-
 **Start the server:**
 ```bash
 npm start
 ```
-Default backend URL: http://localhost:3000
+**Default backend URL:** http://localhost:3000
 
 ### Frontend
 **Install Flutter dependencies:**
