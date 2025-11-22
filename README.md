@@ -55,6 +55,7 @@ ShopKart is a full-stack e-commerce application built using Flutter for the fron
 
 ## Project Structure
 ### Frontend (`lib/`)
+```shell
 lib/
 ├── functions/
 │ ├── api.dart # API call functions
@@ -67,11 +68,10 @@ lib/
 ├── main.dart # App entry point
 ├── home.dart # Home screen
 └── account.dart # User account/profile screen
-
-shell
-Copy code
+```
 
 ### Backend (`server/`)
+```shell
 server/
 ├── routes/
 │ ├── index.js # Home route
@@ -83,10 +83,7 @@ server/
 ├── uploads/ # Uploaded profile images
 ├── app.js # Express app setup
 └── db.js # MySQL database connection
-
-yaml
-Copy code
-
+```
 ---
 
 ## Setup & Installation
@@ -96,42 +93,42 @@ Copy code
 cd server
 npm install
 Configure MySQL database in db.js.
-
+```
 Start the server:
-
-bash
-Copy code
+```bash
 npm start
 Default backend URL: http://localhost:3000
-
+```
 Frontend
 Install Flutter dependencies:
 
-bash
-Copy code
+```bash
 flutter pub get
 Run the Flutter app:
+```
 
-bash
+```bash
 Copy code
 flutter run
 Ensure the backend server is running before launching the app.
+```
+---
 
 API Endpoints
 Endpoint	Method	Description
+```shell
 /loginSignup/login	POST	User login
 /loginSignup/signup	POST	User registration
 /dashboard	POST	Update user profile with optional image
 /categories	GET	Fetch all product categories
 /products	GET	Fetch all products
 /wishlist	POST	Add/remove products to wishlist
+```
 
 Example: Update Profile
+```json
 URL: POST http://localhost:3000/dashboard
 Body (Multipart):
-
-json
-Copy code
 {
   "id": "4",
   "username": "sadid123",
@@ -140,9 +137,6 @@ Copy code
   "image": "file (optional)"
 }
 Response:
-
-json
-Copy code
 {
   "message": "Profile updated successfully",
   "user": {
@@ -152,6 +146,9 @@ Copy code
     "avatar": "profile123.jpg"
   }
 }
+```
+---
+
 Session Management
 Singleton Pattern: SessionManager holds the current user data.
 
@@ -160,6 +157,8 @@ Store user: SessionManager.instance.setUser(user)
 Retrieve user: SessionManager.instance.user
 
 Clear user on logout: SessionManager.instance.clear()
+
+---
 
 Screens & Navigation
 Home Screen: Shows products, categories, and top bar with user avatar.
@@ -171,10 +170,12 @@ Wishlist Screen: Shows favorited products.
 Bottom Navigation: Home, Browse, Wishlist, Bag, Account
 Navigation is handled using:
 
-dart
-Copy code
+```dart
 Navigator.pushReplacementNamed(context, '/routeName', arguments: data);
+```
 User data is passed through arguments and stored in SessionManager.
+
+---
 
 Notes & Considerations
 Profile Images
