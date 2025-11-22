@@ -1,6 +1,4 @@
-# shopkart
-
-ShopKart Application Documentation
+##ShopKart Application Documentation
 ==================================
 
 Table of Contents
