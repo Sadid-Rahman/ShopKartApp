@@ -87,6 +87,7 @@ server/
 ---
 
 ## Setup & Installation
+
 ### Backend
 **Install dependencies:**
 ```bash
@@ -114,6 +115,7 @@ Ensure the backend server is running before launching the app.
 ---
 
 ### API Endpoints
+
 **Endpoint	Method	Description**
 ```shell
 /loginSignup/login	POST	User login
@@ -158,6 +160,7 @@ Response:
 ---
 
 ### Screens & Navigation
+
 **Home Screen**: Shows products, categories, and top bar with user avatar.
 **Dashboard/Profile Screen**: Update user information and profile picture.
 **Wishlist Screen**: Shows favorited products.
@@ -173,15 +176,22 @@ User data is passed through arguments and stored in SessionManager.
 
 ### Notes & Considerations
 **Profile Images**
-Uploaded via Multer in backend
-Accessed from /uploads folder via http://localhost:3000/uploads/{filename}
+- Uploaded via Multer in backend
+- Accessed from /uploads folder via http://localhost:3000/uploads/{filename}
 
 **Error Handling**
-Backend returns proper JSON errors for DB failures
-Flutter shows SnackBar messages for success/failure
+- Backend returns proper JSON errors for DB failures
+- Flutter shows SnackBar messages for success/failure
 
 **Offline / Network Errors**
-Flutter handles network exceptions when loading images or API data
+- Flutter handles network exceptions when loading images or API data
 
 **Null Safety**
-All user fields checked for null before rendering
+- All user fields checked for null before rendering
+
+### Known Issues & Future Enhancements
+
+- The API does not have enough products and contains random data; therefore, the app might look empty.
+- Currently, the app is built for Linux and Chrome, but other platforms can be supported easily by including the necessary packages—no need to rewrite the code.
+- Due to API limitations, only product categories are listed in the Browse tab.
+- In the future, the app can be built for other platforms and a better API can be used for more realistic data.
