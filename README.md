@@ -54,6 +54,7 @@ ShopKart is a full-stack e-commerce application built using Flutter for the fron
 ---
 
 ## Project Structure
+
 ### Frontend (`lib/`)
 ```shell
 lib/
@@ -71,6 +72,7 @@ lib/
 ```
 
 ### Backend (`server/`)
+
 ```shell
 server/
 ├── routes/
@@ -93,13 +95,15 @@ server/
 ```bash
 cd server
 npm install
-Configure MySQL database in db.js.
 ```
+Configure MySQL database in db.js.
+
 **Start the server:**
 ```bash
 npm start
-Default backend URL: http://localhost:3000
 ```
+Default backend URL: http://localhost:3000
+
 ### Frontend
 **Install Flutter dependencies:**
 ```bash
@@ -127,6 +131,7 @@ Ensure the backend server is running before launching the app.
 ```
 
 **Example: Update Profile**
+
 ```json
 URL: POST http://localhost:3000/dashboard
 Body (Multipart):
@@ -148,6 +153,7 @@ Response:
   }
 }
 ```
+
 ---
 
 ### Session Management
@@ -165,7 +171,6 @@ Response:
 **Dashboard/Profile Screen**: Update user information and profile picture.
 **Wishlist Screen**: Shows favorited products.
 **Bottom Navigation**: Home, Browse, Wishlist, Bag, Account
-
 **Navigation is handled using:**
 ```dart
 Navigator.pushReplacementNamed(context, '/routeName', arguments: data);
@@ -188,6 +193,8 @@ User data is passed through arguments and stored in SessionManager.
 
 **Null Safety**
 - All user fields checked for null before rendering
+
+---
 
 ### Known Issues & Future Enhancements
 
