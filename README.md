@@ -94,28 +94,28 @@ cd server
 npm install
 Configure MySQL database in db.js.
 ```
-Start the server:
+**Start the server:**
 ```bash
 npm start
 Default backend URL: http://localhost:3000
 ```
-Frontend
+### Frontend
 Install Flutter dependencies:
 
 ```bash
 flutter pub get
-Run the Flutter app:
 ```
+Run the Flutter app:
 
 ```bash
-Copy code
 flutter run
-Ensure the backend server is running before launching the app.
 ```
+Ensure the backend server is running before launching the app.
+
 ---
 
-API Endpoints
-Endpoint	Method	Description
+### API Endpoints
+**Endpoint	Method	Description**
 ```shell
 /loginSignup/login	POST	User login
 /loginSignup/signup	POST	User registration
@@ -125,7 +125,7 @@ Endpoint	Method	Description
 /wishlist	POST	Add/remove products to wishlist
 ```
 
-Example: Update Profile
+**Example: Update Profile**
 ```json
 URL: POST http://localhost:3000/dashboard
 Body (Multipart):
@@ -149,27 +149,22 @@ Response:
 ```
 ---
 
-Session Management
+### Session Management
+
 Singleton Pattern: SessionManager holds the current user data.
-
 Store user: SessionManager.instance.setUser(user)
-
 Retrieve user: SessionManager.instance.user
-
 Clear user on logout: SessionManager.instance.clear()
 
 ---
 
-Screens & Navigation
-Home Screen: Shows products, categories, and top bar with user avatar.
+### Screens & Navigation
+**Home Screen**: Shows products, categories, and top bar with user avatar.
+**Dashboard/Profile Screen**: Update user information and profile picture.
+**Wishlist Screen**: Shows favorited products.
+**Bottom Navigation**: Home, Browse, Wishlist, Bag, Account
 
-Dashboard/Profile Screen: Update user information and profile picture.
-
-Wishlist Screen: Shows favorited products.
-
-Bottom Navigation: Home, Browse, Wishlist, Bag, Account
 Navigation is handled using:
-
 ```dart
 Navigator.pushReplacementNamed(context, '/routeName', arguments: data);
 ```
@@ -177,19 +172,17 @@ User data is passed through arguments and stored in SessionManager.
 
 ---
 
-Notes & Considerations
-Profile Images
+### Notes & Considerations
+**Profile Images**
 Uploaded via Multer in backend
-
 Accessed from /uploads folder via http://localhost:3000/uploads/{filename}
 
-Error Handling
+**Error Handling**
 Backend returns proper JSON errors for DB failures
-
 Flutter shows SnackBar messages for success/failure
 
-Offline / Network Errors
+**Offline / Network Errors**
 Flutter handles network exceptions when loading images or API data
 
-Null Safety
+**Null Safety**
 All user fields checked for null before rendering
