@@ -1,0 +1,16 @@
+/home/sadid07/Desktop/flutter/ShopKartApp/shopkart/build/linux/x64/debug/bundle/shopkart
+/home/sadid07/Desktop/flutter/ShopKartApp/shopkart/build/linux/x64/debug/bundle/data/icudtl.dat
+/home/sadid07/Desktop/flutter/ShopKartApp/shopkart/build/linux/x64/debug/bundle/lib/libflutter_linux_gtk.so
+/home/sadid07/Desktop/flutter/ShopKartApp/shopkart/build/linux/x64/debug/bundle/lib/libfile_selector_linux_plugin.so
+/home/sadid07/Desktop/flutter/ShopKartApp/shopkart/build/linux/x64/debug/bundle/data/flutter_assets/kernel_blob.bin
+/home/sadid07/Desktop/flutter/ShopKartApp/shopkart/build/linux/x64/debug/bundle/data/flutter_assets/AssetManifest.bin.json
+/home/sadid07/Desktop/flutter/ShopKartApp/shopkart/build/linux/x64/debug/bundle/data/flutter_assets/assets/default_avatar.png
+/home/sadid07/Desktop/flutter/ShopKartApp/shopkart/build/linux/x64/debug/bundle/data/flutter_assets/FontManifest.json
+/home/sadid07/Desktop/flutter/ShopKartApp/shopkart/build/linux/x64/debug/bundle/data/flutter_assets/NativeAssetsManifest.json
+/home/sadid07/Desktop/flutter/ShopKartApp/shopkart/build/linux/x64/debug/bundle/data/flutter_assets/shaders/stretch_effect.frag
+/home/sadid07/Desktop/flutter/ShopKartApp/shopkart/build/linux/x64/debug/bundle/data/flutter_assets/shaders/ink_sparkle.frag
+/home/sadid07/Desktop/flutter/ShopKartApp/shopkart/build/linux/x64/debug/bundle/data/flutter_assets/version.json
+/home/sadid07/Desktop/flutter/ShopKartApp/shopkart/build/linux/x64/debug/bundle/data/flutter_assets/NOTICES.Z
+/home/sadid07/Desktop/flutter/ShopKartApp/shopkart/build/linux/x64/debug/bundle/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+/home/sadid07/Desktop/flutter/ShopKartApp/shopkart/build/linux/x64/debug/bundle/data/flutter_assets/AssetManifest.bin
+/home/sadid07/Desktop/flutter/ShopKartApp/shopkart/build/linux/x64/debug/bundle/data/flutter_assets/NOTICES
