@@ -88,7 +88,7 @@ server/
 
 ## Setup & Installation
 ### Backend
-1. Install dependencies:
+**Install dependencies:**
 ```bash
 cd server
 npm install
@@ -100,13 +100,12 @@ npm start
 Default backend URL: http://localhost:3000
 ```
 ### Frontend
-Install Flutter dependencies:
-
+**Install Flutter dependencies:**
 ```bash
 flutter pub get
 ```
-Run the Flutter app:
 
+**Run the Flutter app:**
 ```bash
 flutter run
 ```
@@ -151,10 +150,10 @@ Response:
 
 ### Session Management
 
-Singleton Pattern: SessionManager holds the current user data.
-Store user: SessionManager.instance.setUser(user)
-Retrieve user: SessionManager.instance.user
-Clear user on logout: SessionManager.instance.clear()
+**Singleton Pattern:** SessionManager holds the current user data.
+**Store user:** SessionManager.instance.setUser(user)
+**Retrieve user:** SessionManager.instance.user
+**Clear user on logout:** SessionManager.instance.clear()
 
 ---
 
@@ -164,7 +163,7 @@ Clear user on logout: SessionManager.instance.clear()
 **Wishlist Screen**: Shows favorited products.
 **Bottom Navigation**: Home, Browse, Wishlist, Bag, Account
 
-Navigation is handled using:
+**Navigation is handled using:**
 ```dart
 Navigator.pushReplacementNamed(context, '/routeName', arguments: data);
 ```
